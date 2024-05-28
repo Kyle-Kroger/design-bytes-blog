@@ -3,7 +3,13 @@ import React from "react";
 import BlogSummaryCard from "@/components/BlogSummaryCard";
 
 import styles from "./homepage.module.css";
+import { BLOG_TITLE } from "@/constants";
 import { getBlogPostList } from "../helpers/file-helpers";
+
+export const metadata = {
+  title: BLOG_TITLE,
+  description: "A Blog about my journey learning code",
+};
 
 async function Home() {
   const blogPosts = await getBlogPostList();
