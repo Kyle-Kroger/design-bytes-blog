@@ -9,7 +9,7 @@ import SliderControl from "@/components/SliderControl";
 
 import styles from "./SlidingWindow.module.css";
 
-const defaultArray = range(10);
+const defaultArray = range(8);
 
 function SlidingWindowDemo({
   array = defaultArray,
@@ -17,8 +17,11 @@ function SlidingWindowDemo({
   initialWindowLength = 3,
   isVariableLength = false,
 }) {
+  const id = React.useId();
   const [startIndex, setStartIndex] = useState(initialStartIndex);
   const [windowLength, setWindowLength] = useState(initialWindowLength);
+
+  const endIndex = startIndex + windowLength - 1;
   return (
     <Card as="section" className={styles.wrapper}>
       <SliderControl
@@ -30,21 +33,21 @@ function SlidingWindowDemo({
         value={startIndex}
         onChange={(ev) => setStartIndex(Number(ev.target.value))}
       />
-      <div className={styles.windowWrapper}>
+      <ul className={styles.windowWrapper}>
         {array.map((num, i) => {
-          const isSelected =
-            i >= startIndex && i < startIndex + windowLength ? true : false;
-          console.log(isSelected);
           return (
-            <div
-              key={num}
-              className={clsx(styles.item, isSelected && styles.selectedItem)}
-            >
-              {num}
-            </div>
+            <li className={styles.itemWrapper} key={num}>
+              {i === startIndex && (
+                <motion.div
+                  layoutId={`${id}-selected-index`}
+                  className={styles.slidingWindow}
+                />
+              )}
+              <div className={styles.item}>{num}</div>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </Card>
   );
 }
