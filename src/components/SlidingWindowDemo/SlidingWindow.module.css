@@ -46,8 +46,8 @@
   /* Change from hard coded to state value */
   width: 204px;
   /* pointer-events: none; */
-  border: 2px solid var(--color-secondary);
+  border: 2px solid var(--color-decorative-900);
   border-radius: 6px;
-  background-color: hsla(294, 66%, 71%, 0.4);
+  background-color: var(--color-decorative-500T);
   z-index: 99;
 }

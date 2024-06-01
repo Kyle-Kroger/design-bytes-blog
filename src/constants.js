@@ -1,22 +1,72 @@
 export const BLOG_TITLE = "Design Bytes";
 
+const purple = {
+  purple1: "hsl(300, 50%, 99%)",
+  purple2: "hsl(274, 78%, 98%)",
+  purple3: "hsl(275, 89%, 96%)",
+  purple4: "hsl(277, 81%, 94%)",
+  purple5: "hsl(275, 75%, 91%)",
+  purple6: "hsl(275, 69%, 86%)",
+  purple7: "hsl(273, 62%, 81%)",
+  purple8: "hsl(272, 60%, 74%)",
+  purple9: "hsl(272, 51%, 54%)",
+  purple10: "hsl(272, 45%, 50%)",
+  purple11: "hsl(272, 45%, 49%)",
+  purple12: "hsl(270, 50%, 25%)",
+};
+
+const indigo = {
+  indigo1: "hsl(240, 33%, 99%)",
+  indigo2: "hsl(225, 100%, 98%)",
+  indigo3: "hsl(222, 89%, 96%)",
+  indigo4: "hsl(224, 100%, 94%)",
+  indigo5: "hsl(224, 100%, 91%)",
+  indigo6: "hsl(225, 100%, 88%)",
+  indigo7: "hsl(226, 87%, 82%)",
+  indigo8: "hsl(226, 75%, 75%)",
+  indigo9: "hsl(226, 70%, 55%)",
+  indigo10: "hsl(226, 65%, 52%)",
+  indigo11: "hsl(226, 56%, 50%)",
+  indigo12: "hsl(226, 50%, 24%)",
+};
+
+const jade = {
+  jade1: "hsl(160, 60%, 99%)",
+  jade2: "hsl(146, 47%, 97%)",
+  jade3: "hsl(145, 52%, 94%)",
+  jade4: "hsl(149, 49%, 89%)",
+  jade5: "hsl(152, 46%, 84%)",
+  jade6: "hsl(154, 43%, 77%)",
+  jade7: "hsl(159, 41%, 68%)",
+  jade8: "hsl(164, 42%, 53%)",
+  jade9: "hsl(164, 60%, 40%)",
+  jade10: "hsl(164, 60%, 37%)",
+  jade11: "hsl(164, 61%, 32%)",
+  jade12: "hsl(160, 34%, 17%)",
+};
+
 export const LIGHT_COLORS = {
   "--color-text": "hsl(0deg 0% 5%)",
-  "--color-primary-100": "hsl(240deg 100% 90%)",
-  "--color-primary-300": "hsl(242deg 100% 70%)",
-  "--color-primary-500": "hsl(245deg 100% 60%)",
-  "--color-primary-700": "hsl(250deg 100% 33%)",
-  "--color-primary-900": "hsl(256deg 100% 20%)",
+  "--color-primary-100": "hsl(240, 33%, 99%)",
+  "--color-primary-300": "hsl(222, 89%, 96%)",
+  "--color-primary-500": "hsl(224, 100%, 91%)",
+  "--color-primary-700": "hsl(226, 87%, 82%)",
+  "--color-primary-900": "hsl(226, 70%, 55%)",
   "--color-primary-contrast": "white",
   "--color-secondary-500": "hsl(328deg 100% 50%)",
-  "--color-decorative-100": "hsl(50deg 100% 94%)",
-  "--color-decorative-200": "hsl(50deg 100% 90%)",
-  "--color-decorative-300": "hsl(50deg 100% 85%)",
-  "--color-decorative-500": "hsl(50deg 100% 70%)",
-  "--color-decorative-600": "hsl(50deg 100% 60%)",
-  "--color-decorative-700": "hsl(50deg 100% 50%)",
-  "--color-decorative-800": "hsl(50deg 100% 33%)",
-  "--color-decorative-900": "hsl(50deg 100% 25%)",
+  "--color-decorative-100": "hsl(300, 50%, 99%)",
+  "--color-decorative-200": "hsl(274, 78%, 98%)",
+  "--color-decorative-300": "hsl(275, 89%, 96%)",
+  "--color-decorative-400": "hsl(277, 81%, 94%)",
+  "--color-decorative-500": "hsl(275, 75%, 91%)",
+  "--color-decorative-500T": "hsla(275, 75%, 91%, 0.5)",
+  "--color-decorative-600": "hsl(275, 69%, 86%)",
+  "--color-decorative-700": "hsl(273, 62%, 81%)",
+  "--color-decorative-800": "hsl(272, 60%, 74%)",
+  "--color-decorative-900": "hsl(272, 51%, 54%)",
+  "--color-decorative-1000": "hsl(272, 45%, 50%)",
+  "--color-decorative-1100": "hsl(272, 45%, 49%)",
+  "--color-decorative-1200": "hsl(270, 50%, 25%)",
   "--color-gray-0": "white",
   "--color-gray-100": "hsl(50deg 20% 90%)",
   "--color-gray-200": "hsl(50deg 15% 85%)",
@@ -29,11 +79,18 @@ export const LIGHT_COLORS = {
 
 export const DARK_COLORS = {
   "--color-text": "hsl(0deg 0% 100%)",
-  "--color-primary-100": "hsl(50deg 100% 90%)",
-  "--color-primary-300": "hsl(50deg 100% 70%)",
-  "--color-primary-500": "hsl(50deg 100% 50%)",
-  "--color-primary-700": "hsl(50deg 100% 35%)",
-  "--color-primary-900": "hsl(50deg 100% 25%)",
+  "--color-primary-100": "hsl(300, 50%, 99%)",
+  "--color-primary-200": "hsl(274, 78%, 98%)",
+  "--color-primary-300": "hsl(275, 89%, 96%)",
+  "--color-primary-400": "hsl(277, 81%, 94%)",
+  "--color-primary-500": "hsl(275, 75%, 91%)",
+  "--color-primary-600": "hsl(275, 69%, 86%)",
+  "--color-primary-700": "hsl(273, 62%, 81%)",
+  "--color-primary-800": "hsl(272, 60%, 74%)",
+  "--color-primary-900": "hsl(272, 51%, 54%)",
+  "--color-primary-1000": "hsl(272, 45%, 50%)",
+  "--color-primary-1100": "hsl(272, 45%, 49%)",
+  "--color-primary-1200": "hsl(270, 50%, 25%)",
   "--color-primary-contrast": "black",
   "--color-secondary-500": "hsl(328deg 100% 50%)",
   "--color-decorative-100": "hsl(256deg 20% 4%)",
@@ -55,9 +112,9 @@ export const DARK_COLORS = {
 };
 
 // Add in semantic / special colors
-LIGHT_COLORS["--color-primary"] = LIGHT_COLORS["--color-primary-500"];
+LIGHT_COLORS["--color-primary"] = LIGHT_COLORS["--color-primary-900"];
 LIGHT_COLORS["--color-secondary"] = LIGHT_COLORS["--color-secondary-500"];
-LIGHT_COLORS["--color-inline-code-bg"] = "hsl(45deg 74% 85%)";
+LIGHT_COLORS["--color-inline-code-bg"] = LIGHT_COLORS["--color-primary-500"];
 LIGHT_COLORS["--color-selection-text"] = "black";
 LIGHT_COLORS["--color-selection-background"] =
   LIGHT_COLORS["--color-decorative-700"];
@@ -85,17 +142,17 @@ DARK_COLORS["--color-card-border"] = DARK_COLORS["--color-page-border"];
 
 export const LIGHT_SHADOWS = {
   "--shadow-page": `
-    0px 1px 2px hsl(50deg 60% 50% / 0.25),
-    0px 3px 6px hsl(50deg 60% 50% / 0.25),
-    0px 9px 18px hsl(50deg 60% 50% / 0.25),
-    0px 18px 36px hsl(50deg 60% 50% / 0.25),
-    0px 54px 108px hsl(50deg 60% 50% / 0.25)
+    0px 1px 2px hsl(275deg 40% 50% / 0.25),
+    0px 3px 6px hsl(275deg 40% 50% / 0.25),
+    0px 9px 18px hsl(275deg 40% 50% / 0.25),
+    0px 18px 36px hsl(275deg 40% 50% / 0.25),
+    0px 54px 108px hsl(275deg 40% 50% / 0.25)
   `,
   "--shadow-card": `
-    0px 1px 2px hsl(50deg 20% 50% / 0.2),
-    0px 2px 4px hsl(50deg 20% 50% / 0.2),
-    0px 4px 8px hsl(50deg 20% 50% / 0.2),
-    0px 8px 16px hsl(50deg 20% 50% / 0.2)
+    0px 1px 2px hsl(275deg 20% 50% / 0.2),
+    0px 2px 4px hsl(275deg 20% 50% / 0.2),
+    0px 4px 8px hsl(275deg 20% 50% / 0.2),
+    0px 8px 16px hsl(275deg 20% 50% / 0.2)
   `,
 };
 export const DARK_SHADOWS = {
